@@ -22,6 +22,7 @@
     <link href="{{ asset('assets/css/metismenu.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{ asset('assets/css/icons.css')}}" rel="stylesheet" type="text/css">
     <link href="{{ asset('assets/css/style.css')}}" rel="stylesheet" type="text/css">
+    @yield('css')
 </head>
 <body>
     <div id="wrapper">
@@ -48,7 +49,7 @@
                             </form>
                         </div>
                     </li>
-                </ul>    
+                </ul>
                 <ul class="list-inline menu-left mb-0">
                     <li class="float-left">
                         <button class="button-menu-mobile open-left waves-effect"><i class="mdi mdi-menu"></i></button>
@@ -72,6 +73,7 @@
                     <ul class="metismenu" id="side-menu">
                         <li class="menu-title">Main</li>
                         <x-backend.side-bar-link label="Dashboard" link="dashboard" />
+                        <x-backend.side-bar-link label="Order" link="order" />
                         <li><a href="calendar.html" class="waves-effect"><i class="mdi mdi-calendar-check"></i><span> Calendar</span></a></li>
                         <li><a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-email-outline"></i><span> Email <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
                             <ul class="submenu">
@@ -92,7 +94,7 @@
         <!-- Start right Content here -->
         <!-- ============================================================== -->
         <div class="content-page">
-            
+
             <!-- content -->
             @yield('content')
 
@@ -115,7 +117,14 @@
     <script src="{{ asset('plugins/morris/morris.min.js')}}"></script>
     <script src="{{ asset('plugins/raphael/raphael-min.js')}}"></script>
     <script src="{{ asset('assets/pages/dashboard.js')}}"></script>
+
+
+    <!-- Datatable init js -->
+    <script src="{{asset('assets/pages/datatables.init.js')}}"></script>
     <!-- App js -->
-    <script src="{{ asset('assets/js/app.js')}}"></script> 
+    <script src="{{ asset('assets/js/app.js')}}"></script>
+
+    @yield('js')
+
 </body>
 </html>
