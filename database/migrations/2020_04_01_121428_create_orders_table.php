@@ -18,8 +18,7 @@ class CreateOrdersTable extends Migration
             $table->string('name');
             $table->string('slug')->unique();
             $table->text('address');
-            $table->string('contact');
-            $table->text('prescription_image');
+            $table->string('phone');
             $table->integer('status')->comment('1=>pending,2=>dispatched,3=>delivered');
             $table->integer('last_updated_by')->comment('auth user')->nullable();
             $table->timestamps();
