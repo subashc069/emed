@@ -7,7 +7,7 @@
                     <div class="display-tc animate-box" data-animate-effect="fadeIn">
                         <h1>eMed Nepal</h1>
                         <h2>Nepal largest online retail pharmacy</a></h2>
-                        <p><a href="#" class="btn btn-default">Order</a></p>
+                        <p><a href="/order-now" class="btn btn-default">Order</a></p>
                     </div>
                 </div>
             </div>

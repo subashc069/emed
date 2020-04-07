@@ -16,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('layouts.front');
 });
+Route::name('frontend.order.')->prefix('order-now')->namespace('Front')->group(function () {
+    Route::get('/', 'OrderController@index')->name('index');
+    Route::post('/store', 'OrderController@store')->name('store');
+});
 
 Auth::routes();
 
@@ -31,6 +35,6 @@ Route::get('/dashboard', 'Dashboard\DashboardController@index')->name('dashboard
 |
 */
 
-Route::name('admin.order')->prefix('dashboard/order')->namespace('Order')->middleware('auth')->group(function() {
+Route::name('admin.order.')->prefix('dashboard/order')->namespace('Order')->middleware('auth')->group(function() {
    Route::get('/', 'OrderController@index')->name('index');
 });
