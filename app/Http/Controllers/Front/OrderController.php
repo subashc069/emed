@@ -15,4 +15,9 @@ class OrderController extends Controller
     {
     	dd($request->all());
     }
+
+    public function orderCompleted()
+    {
+    	return view('front.order.order-completed');
+    }
 }
