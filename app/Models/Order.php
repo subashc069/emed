@@ -7,4 +7,30 @@ use Illuminate\Database\Eloquent\Model;
 class Order extends Model
 {
     protected  $table = 'orders';
+
+    public function prescriptions()
+    {
+        return $this->hasMany(Prescription::class);
+    }
+
+    public function scopePending($query)
+    {
+        return $query->whereStatus(1);
+    }
+
+    public function scopeDispatched($query)
+    {
+        return $query->whereStatus(3);
+    }
+
+    public function scopeDelivered($query)
+    {
+        return $query->whereStatus(4);
+    }
+
+    public function scopeConfirmed($query)
+    {
+        return $query->whereStatus(2);
+    }
+
 }
