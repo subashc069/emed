@@ -37,10 +37,10 @@
                                 </div>
                             </div>
                             <div class="description-content">
-                                <div class="row description-content-file" data-index="1">
+                                <div class="row description-content-file" data-index="0">
                                     <div class="col-md-6">
                                         <label>Description</label>
-                                        <textarea class="form-control" placeholder="Description" name="prescription[1][description]" rows="4" cols="3"></textarea>
+                                        <textarea class="form-control" placeholder="Description" name="prescription[0][description]" rows="4" cols="3"></textarea>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="row">
@@ -49,12 +49,12 @@
                                                   <span class="label">
                                                     Upload File
                                                   </span>
-                                                    <input type="file" name="prescription[1][image]" id="upload" class="upload-box-1" data-index="1" placeholder="Upload File">
-                                                    <span class="custom-file-name-1"></span>
+                                                    <input type="file" name="prescription[0][image]" id="upload" class="upload-box-0" data-index="0" placeholder="Upload File">
+                                                    <span class="custom-file-name-0"></span>
                                                 </div>
                                             </div>
                                             <div class="col-md-6" style="height: 150px; width: 150px;">
-                                                <img class="no-img-1" data-index="1" src="{{ asset('assets/images/no-image/no-img.jpg') }}" height="150" style="margin-top: 10px;">
+                                                <img class="no-img-0" data-index="0" src="{{ asset('assets/images/no-image/no-img.jpg') }}" height="150" style="margin-top: 10px;">
                                             </div>
                                         </div>
                                     </div>
