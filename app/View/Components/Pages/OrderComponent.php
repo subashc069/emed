@@ -1,10 +1,10 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\Pages;
 
 use Illuminate\View\Component;
 
-class Header extends Component
+class OrderComponent extends Component
 {
     /**
      * Create a new component instance.
@@ -22,7 +22,7 @@ class Header extends Component
      * @return \Illuminate\View\View|string
      */
     public function render()
-        {
-        return view('components.header');
+    {
+        return view('components.pages.order-component');
     }
 }
