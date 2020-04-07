@@ -19,6 +19,7 @@ Route::get('/', function () {
 Route::name('frontend.order.')->prefix('order-now')->namespace('Front')->group(function () {
     Route::get('/', 'OrderController@index')->name('index');
     Route::post('/store', 'OrderController@store')->name('store');
+    Route::get('/completed', 'OrderController@orderCompleted')->name('order-completed');
 });
 
 Auth::routes();
