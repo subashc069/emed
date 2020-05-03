@@ -16,10 +16,10 @@ class CreateOrdersTable extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('slug')->unique();
+            $table->string('slug')->nullable()->default(null)->unique();
             $table->text('address');
             $table->string('phone');
-            $table->integer('status')->comment('1=>pending,2=>confirmed, 3=>dispatched,4=>delivered');
+            $table->integer('status')->default(1)->comment('1=>pending,2=>confirmed, 3=>dispatched,4=>delivered');
             $table->integer('last_updated_by')->comment('auth user')->nullable();
             $table->index(['id']);
             $table->timestamps();

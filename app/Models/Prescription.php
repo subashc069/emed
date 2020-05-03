@@ -12,4 +12,9 @@ class Prescription extends Model
     {
         return $this->belongsTo(Order::class);
     }
+
+    public function getImageAttribute($image)
+    {
+        return $image ? asset('public/upload/prescriptions/' . $image) : '';
+    }
 }

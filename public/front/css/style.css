@@ -312,14 +312,23 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  background: #ff5db1;
+  /* background: #ff5db1;
   background: -moz-linear-gradient(-45deg, #ff5db1 0%, rgba(0, 87, 137, 0.7) 100%);
   background: -webkit-gradient(left top, right bottom, color-stop(0%, #ff5db1), color-stop(100%, rgba(0, 87, 137, 0.7)));
   background: -webkit-linear-gradient(-45deg, #ff5db1 0%, rgba(0, 87, 137, 0.7) 100%);
   background: -o-linear-gradient(-45deg, #ff5db1 0%, rgba(0, 87, 137, 0.7) 100%);
   background: -ms-linear-gradient(-45deg, #ff5db1 0%, rgba(0, 87, 137, 0.7) 100%);
   background: linear-gradient(135deg, #ff5db1 0%, rgba(0, 87, 137, 0.7) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5db1', endColorstr='#005789', GradientType=1 );
+   */
+  background: #00C9FF;
+  background: -moz-linear-gradient(-45deg, #00C9FF 0%, rgba(146,254,157, 0.7) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #00C9FF), color-stop(100%, rgba(146,254,157, 0.7)));
+  background: -webkit-linear-gradient(-45deg, #00C9FF 0%, rgba(0, 87, 137, 0.7) 100%);
+  background: -o-linear-gradient(-45deg, #00C9FF 0%, rgba(0, 87, 137, 0.7) 100%);
+  background: -ms-linear-gradient(-45deg, #00C9FF 0%, rgba(0, 87, 137, 0.7) 100%);
+  background: linear-gradient(135deg, #00C9FF 0%, rgba(0, 87, 137, 0.7) 100%);
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00C9FF', endColorstr='#92FE9D', GradientType=1 );
 }
 .fh5co-cover > .fh5co-container {
   position: relative;
@@ -530,7 +539,7 @@ form label {
 #fh5co-counter .display-tc .btn,
 .fh5co-cover .display-tc .btn {
   padding: 15px 80px;
-  background: #50CB86 !important;
+  background: #6159e6 !important ;
   color: #fff;
   border: none !important;
   font-size: 18px;
@@ -539,7 +548,7 @@ form label {
 #fh5co-header .display-tc .btn:hover,
 #fh5co-counter .display-tc .btn:hover,
 .fh5co-cover .display-tc .btn:hover {
-  background: #50CB86 !important;
+  background: #352aef !important;
   -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
@@ -606,7 +615,7 @@ form label {
 #fh5co-started,
 #fh5co-footer,
 .fh5co-section {
-  padding: 7em 0;
+  padding: 2em 0;
   clear: both;
 }
 @media screen and (max-width: 768px) {

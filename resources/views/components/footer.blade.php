@@ -1,6 +1,6 @@
 <footer id="fh5co-footer" role="contentinfo">
     <div class="container">
-        <div class="row row-pb-md">
+        <div class="row row-pb-sm">
             <div class="col-md-12 text-center">
                 <h3>eMed Nepal</h3>
                 <p>Nepal largest online retail pharmacy.</p>

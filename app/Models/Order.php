@@ -8,9 +8,11 @@ class Order extends Model
 {
     protected  $table = 'orders';
 
+    protected $guarded = [];
+
     public function prescriptions()
     {
-        return $this->hasMany(Prescription::class);
+        return $this->hasMany(Prescription::class, 'order_id');
     }
 
     public function scopePending($query)

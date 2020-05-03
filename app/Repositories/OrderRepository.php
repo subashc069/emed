@@ -34,7 +34,7 @@ class OrderRepository implements OrderRepositoryInterface
      */
     public function all()
     {
-        return Order::all();
+        return Order::with('prescriptions')->get();
     }
 
     /**
