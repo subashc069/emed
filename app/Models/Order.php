@@ -3,9 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Cviebrock\EloquentSluggable\Sluggable;
 
 class Order extends Model
 {
+    use Sluggable;
+
     protected  $table = 'orders';
 
     protected $guarded = [];

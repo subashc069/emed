@@ -14,20 +14,20 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="">Name</label>
-                                    <input type="text" name="name" class="form-control" placeholder="Enter Your Name" required>
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="">Phone</label>
-                                    <input type="number" name="contact" class="form-control" placeholder="Mobile no" required>
+                                    <input type="number" name="phone" id="phone" class="form-control" placeholder="Mobile no" required>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <label>Address</label>
-                                <input type="text" class="form-control" name="address" placeholder="Address" required>
+                                <input type="text" class="form-control" name="address" id="address" placeholder="Address" required>
                             </div>
                         </div>
                         <div class="content">
@@ -146,5 +146,6 @@
                 reader.readAsDataURL(this.files[0]);    
               } 
         });
+
     </script>
 @endsection

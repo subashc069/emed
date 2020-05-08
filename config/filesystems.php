@@ -63,6 +63,11 @@ return [
             'bucket' => env('AWS_BUCKET'),
             'endpoint' => env('AWS_URL'),
         ],
+        'prescription_image' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/uploads/prescription'),
+            'url' =>'/storage/uploads/prescription',
+        ],
 
     ],
 
