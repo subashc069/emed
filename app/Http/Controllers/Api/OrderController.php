@@ -7,7 +7,6 @@ use App\Models\Order;
 use App\Repositories\OrderRepositoryInterface;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 
 class OrderController extends ApiController
@@ -38,8 +37,7 @@ class OrderController extends ApiController
     {
         try {
             $request->validated();
-
-            Log::info($request->all());
+            info($request->all());
             $data = [];
             $data['description'] =  $request->description;
             if ($request->has('image') && $request->hasFile('image')) {
@@ -54,6 +52,7 @@ class OrderController extends ApiController
                     'phone' => $request->phone,
                     'address' => $request->address,
                     'token' => $request->token,
+                    'type' => $request->type
                 ]);
                 if (!empty($data)) {
                     $order->prescriptions()->create($data);
@@ -64,7 +63,7 @@ class OrderController extends ApiController
                 'message' => 'Order placed successfully!'
             ]);
         } catch (\Exception $ex) {
-            Log::info($ex->getMessage());
+            info($ex->getMessage());
             return $this->okResponse([
                 'errors' => true,
                 'message' => 'Order placed failed!'
